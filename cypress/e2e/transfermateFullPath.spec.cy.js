@@ -6,7 +6,7 @@ import { activationPage } from "../support/POM TM/activationPage";
 import { pinPage } from "../support/POM TM/pinPage";
 
 
-describe.skip('Create and activate new account', function () {
+describe('Create and activate new account', function () {
   before ( () => {
     //cy.visit('https://transfermate.io/en/register.asp?')
     Cypress.on('uncaught:exception', (err, runnable) => {
@@ -30,7 +30,7 @@ describe.skip('Create and activate new account', function () {
     emailName: data.randomFirstName + data.randomLastName,
   }
 
-  it('Register new account', () => {
+  it('User can register new account', () => {
     cy.writeFile('cypress/fixtures/data.json', {emailName: datanew.emailName,
       email: datanew.email})
     registerPage.openRegisterPage()
