@@ -1,0 +1,9 @@
+node_modules
+.vscode
+.DS_Store
+cypress/videos
+cypress/screenshots
+cypress/results
+cypress/reports
+yarn.lock
+mochawesome-report
